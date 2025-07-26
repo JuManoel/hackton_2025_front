@@ -253,7 +253,7 @@
         const API_CONFIG = {
             apiKey: "YjdhZDQ1YmM0ODc0NDM3MzhlNzM3MDliNTJhMTEyZWYtMTc1MzQxOTk0OQ==",
             serverUrl: "https://api.heygen.com",
-            baseUrl: "https://516ffe8e0f2e.ngrok-free.app/api",
+            baseUrl: "https://bc098f919e36.ngrok-free.app/api",
             endpoints: {
                 chats: "/chat",
                 messages: "/message",
@@ -701,7 +701,7 @@
                 
                 const response = await fetch(`${API_CONFIG.baseUrl}${API_CONFIG.endpoints.metricas}/${currentChatId}`);
                 const data = await response.json();
-
+                
                 if (response.ok && data) {
                     displayMetrics(data);
                     updateDebug("Métricas generadas exitosamente");
